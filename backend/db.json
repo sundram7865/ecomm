@@ -1,0 +1,131 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo User",
+      "email": "demo@babafly.com",
+      "password": "demo1234",
+      "role": "user"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Rings", "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400", "productCount": 12 },
+    { "id": 2, "name": "Necklaces", "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400", "productCount": 9 },
+    { "id": 3, "name": "Earrings", "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400", "productCount": 14 },
+    { "id": 4, "name": "Bracelets", "image": "https://images.unsplash.com/photo-1573408301185-9519f94f3e0b?w=400", "productCount": 7 },
+    { "id": 5, "name": "Pendants", "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400", "productCount": 5 },
+    { "id": 6, "name": "Bangles", "image": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400", "productCount": 8 }
+  ],
+  "products": [
+    {
+      "id": 1, "name": "Royal Gold Solitaire Ring", "categoryId": 1, "category": "Rings",
+      "price": 24999, "originalPrice": 29999, "offer": "17% OFF",
+      "metalType": "gold", "polishType": "glossy", "rating": 4.8, "reviewCount": 124,
+      "stock": 15, "isFeatured": true, "isLatest": false,
+      "images": ["https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600","https://images.unsplash.com/photo-1616092593736-b3f1e13c6a13?w=600"],
+      "description": "Crafted from 22K hallmarked gold, this solitaire ring is a timeless piece. Features a brilliant-cut diamond set in a prong setting.",
+      "createdAt": "2024-12-01"
+    },
+    {
+      "id": 2, "name": "Silver Layered Necklace", "categoryId": 2, "category": "Necklaces",
+      "price": 3499, "originalPrice": 4999, "offer": "30% OFF",
+      "metalType": "silver", "polishType": "matte", "rating": 4.5, "reviewCount": 89,
+      "stock": 30, "isFeatured": true, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600","https://images.unsplash.com/photo-1608042314453-ae338d682c93?w=600"],
+      "description": "A delicate layered necklace in 925 sterling silver. Perfect for everyday wear or special occasions.",
+      "createdAt": "2025-01-15"
+    },
+    {
+      "id": 3, "name": "Diamond Drop Earrings", "categoryId": 3, "category": "Earrings",
+      "price": 18500, "originalPrice": 22000, "offer": "16% OFF",
+      "metalType": "white-gold", "polishType": "glossy", "rating": 4.9, "reviewCount": 201,
+      "stock": 8, "isFeatured": true, "isLatest": false,
+      "images": ["https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600"],
+      "description": "Stunning drop earrings set with genuine diamonds in 18K white gold. Elegant and contemporary.",
+      "createdAt": "2024-11-20"
+    },
+    {
+      "id": 4, "name": "Rose Gold Tennis Bracelet", "categoryId": 4, "category": "Bracelets",
+      "price": 12999, "originalPrice": 15999, "offer": "19% OFF",
+      "metalType": "rose-gold", "polishType": "glossy", "rating": 4.7, "reviewCount": 67,
+      "stock": 12, "isFeatured": true, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1573408301185-9519f94f3e0b?w=600"],
+      "description": "A classic tennis bracelet in 14K rose gold, adorned with lab-grown diamonds across its entire length.",
+      "createdAt": "2025-02-10"
+    },
+    {
+      "id": 5, "name": "Gold Om Pendant", "categoryId": 5, "category": "Pendants",
+      "price": 5499, "originalPrice": 6999, "offer": "21% OFF",
+      "metalType": "gold", "polishType": "antique", "rating": 4.6, "reviewCount": 143,
+      "stock": 25, "isFeatured": false, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600"],
+      "description": "A sacred Om pendant handcrafted in 22K gold with an antique finish. Comes with a gold chain.",
+      "createdAt": "2025-03-01"
+    },
+    {
+      "id": 6, "name": "Silver Filigree Bangles Set", "categoryId": 6, "category": "Bangles",
+      "price": 2999, "originalPrice": 3999, "offer": "25% OFF",
+      "metalType": "silver", "polishType": "oxidised", "rating": 4.4, "reviewCount": 55,
+      "stock": 20, "isFeatured": false, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600"],
+      "description": "Set of 6 intricate filigree bangles in 925 sterling silver with an oxidised finish.",
+      "createdAt": "2025-03-15"
+    },
+    {
+      "id": 7, "name": "Gold Kundan Earrings", "categoryId": 3, "category": "Earrings",
+      "price": 8999, "originalPrice": 10999, "offer": "18% OFF",
+      "metalType": "gold", "polishType": "antique", "rating": 4.8, "reviewCount": 92,
+      "stock": 10, "isFeatured": false, "isLatest": false,
+      "images": ["https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600"],
+      "description": "Traditional Kundan earrings with meenakari work in 22K gold. A perfect choice for weddings.",
+      "createdAt": "2024-10-05"
+    },
+    {
+      "id": 8, "name": "Platinum Wedding Band", "categoryId": 1, "category": "Rings",
+      "price": 35000, "originalPrice": 40000, "offer": "12% OFF",
+      "metalType": "platinum", "polishType": "glossy", "rating": 5.0, "reviewCount": 38,
+      "stock": 5, "isFeatured": true, "isLatest": false,
+      "images": ["https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600"],
+      "description": "A pure platinum wedding band with a high-gloss finish. Symbolise your forever in the finest metal.",
+      "createdAt": "2024-09-01"
+    },
+    {
+      "id": 9, "name": "Silver Choker Necklace", "categoryId": 2, "category": "Necklaces",
+      "price": 1999, "originalPrice": 2999, "offer": "33% OFF",
+      "metalType": "silver", "polishType": "glossy", "rating": 4.3, "reviewCount": 77,
+      "stock": 35, "isFeatured": false, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1573408301185-9519f94f3e0b?w=600"],
+      "description": "A trendy silver choker necklace with a geometric design. Pairs well with both ethnic and western outfits.",
+      "createdAt": "2025-04-01"
+    },
+    {
+      "id": 10, "name": "Gold Mangalsutra", "categoryId": 2, "category": "Necklaces",
+      "price": 32000, "originalPrice": 38000, "offer": "16% OFF",
+      "metalType": "gold", "polishType": "glossy", "rating": 4.9, "reviewCount": 211,
+      "stock": 6, "isFeatured": true, "isLatest": false,
+      "images": ["https://images.unsplash.com/photo-1608042314453-ae338d682c93?w=600"],
+      "description": "A traditional gold mangalsutra with black beads and a diamond pendant. Auspicious and elegant.",
+      "createdAt": "2024-08-20"
+    },
+    {
+      "id": 11, "name": "Rose Gold Charm Bracelet", "categoryId": 4, "category": "Bracelets",
+      "price": 4500, "originalPrice": 5500, "offer": "18% OFF",
+      "metalType": "rose-gold", "polishType": "matte", "rating": 4.5, "reviewCount": 44,
+      "stock": 18, "isFeatured": false, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1573408301185-9519f94f3e0b?w=600"],
+      "description": "A charming rose gold bracelet with five dangling charms. Customisable and giftable.",
+      "createdAt": "2025-04-20"
+    },
+    {
+      "id": 12, "name": "Silver Toe Ring Set", "categoryId": 1, "category": "Rings",
+      "price": 599, "originalPrice": 899, "offer": "33% OFF",
+      "metalType": "silver", "polishType": "oxidised", "rating": 4.2, "reviewCount": 160,
+      "stock": 50, "isFeatured": false, "isLatest": true,
+      "images": ["https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600"],
+      "description": "A set of 4 adjustable silver toe rings with traditional motifs. Perfect for Indian brides.",
+      "createdAt": "2025-05-01"
+    }
+  ],
+  "orders": [],
+  "reviews": []
+}
