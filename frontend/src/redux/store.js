@@ -1,11 +1,32 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist'
+
+import createWebStorage from 'redux-persist/es/storage/createWebStorage'
 import { combineReducers } from 'redux'
+
 import authReducer from './slices/authSlice'
 import cartReducer from './slices/cartSlice'
 import productReducer from './slices/productSlice'
 import orderReducer from './slices/orderSlice'
+
+// Safe storage for Vite + Redux Persist
+const storage =
+  typeof window !== 'undefined'
+    ? createWebStorage('local')
+    : {
+        getItem: () => Promise.resolve(null),
+        setItem: (_key, value) => Promise.resolve(value),
+        removeItem: () => Promise.resolve(),
+      }
 
 const rootReducer = combineReducers({
   auth: authReducer,
@@ -14,7 +35,7 @@ const rootReducer = combineReducers({
   orders: orderReducer,
 })
 
-// Persist auth and cart across page refreshes
+// Persist auth and cart across refreshes
 const persistConfig = {
   key: 'babafly',
   storage,
@@ -25,10 +46,18 @@ const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 export const store = configureStore({
   reducer: persistedReducer,
+
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        ignoredActions: [
+          FLUSH,
+          REHYDRATE,
+          PAUSE,
+          PERSIST,
+          PURGE,
+          REGISTER,
+        ],
       },
     }),
 })
